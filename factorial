@@ -1,0 +1,20 @@
+#!/bin/bash
+
+clear
+
+
+echo "Enter a number: "
+read num
+
+factorial=1
+count=1
+
+if [ $num -lt 0 ]; then
+	echo "Factorial is undefined for negative numbers"
+else
+	while [ $count -le $num ]; do
+		factorial=$((factorial * count))
+		count=$((count + 1))
+	done
+	echo "Factorial of $umber is: $factorial"
+fi
